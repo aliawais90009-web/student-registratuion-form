@@ -1,0 +1,168 @@
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Main heading */
+h1 {
+    color: #1e3a8a;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    color: #666666;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Input fields, dropdowns and textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.35);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Gender radio buttons */
+.gender-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.gender-options input {
+    width: auto;
+    margin: 0;
+}
+
+/* Terms and conditions */
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    width: auto;
+    margin: 3px 0 0;
+}
+
+.terms label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Register button */
+.register-btn {
+    background-color: #2563eb;
+}
+
+.register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Reset button */
+.reset-btn {
+    background-color: #6b7280;
+}
+
+.reset-btn:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
